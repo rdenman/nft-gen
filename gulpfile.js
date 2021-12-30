@@ -2,7 +2,7 @@ const gulp = require("gulp");
 const cssnano = require("gulp-cssnano");
 const htmlmin = require("gulp-htmlmin");
 const sass = require("gulp-sass")(require("sass"));
-const uglify = require("gulp-uglify");
+const uglify = require("gulp-uglify-es").default;
 
 function html() {
   return gulp
